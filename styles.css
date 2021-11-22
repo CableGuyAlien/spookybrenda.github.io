@@ -4,19 +4,9 @@ html {
 
 body {
     background-color: whitesmoke;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(auto, 5);
-    grid-template-areas: 
-        "header-bar"
-        "main"
-        "info"
-        "team"
-        "footer";
 }
 
 header {
-    grid-area: "header-bar";
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,7 +52,6 @@ header > div {
 }
 
 main {
-    grid-area: "main";
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -76,7 +65,7 @@ main > p {
 }
 
 main > p:last-of-type {
-    margin-bottom: 5.2rem;
+    margin-bottom: 3rem;
 }
 
 main > h1 {
@@ -98,15 +87,41 @@ span {
     font-weight: 700;
 }
 
-.info-1 {
-    grid-area: "info";
+.email-button {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    width: 25%;
+    justify-content: center;
+    background-color: whitesmoke;
+    border: 3px solid rgba(0, 0, 0, 0.75);
+    border-radius: 0.5rem;
+    transition: all ease-in-out 0.2s;
+    padding: 0;
+}
+
+.email-button > a {
+    color: black;
+    text-decoration: none;
+    width: 100%;
+}
+
+.email-button > h3 {
+    width: 100%;
+}
+
+.email-button:hover {
+    opacity: 0.5;
+}
+
+.info {
     display: flex;
     color: whitesmoke;
     background-color: black;
     background-image: url("./images/nft-bg.png");
 }
 
-.info-1 > div {
+.info > div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -130,7 +145,7 @@ span {
     text-align: center;
 }
 
-.info-1 > div > p {
+.info > div > p {
     width: 80%;
     font-size: 1.1rem;
 }
@@ -164,10 +179,6 @@ span {
 
 .right > p {
     text-align: center;
-}
-
-.team {
-    grid-area: "team";
 }
 
 .team-h2 {
@@ -231,7 +242,6 @@ span {
 
 
 
-
 @media only screen and (max-width: 768px) {
     .logo {
         max-height: 5rem;
@@ -255,6 +265,10 @@ span {
     main > h1 {
         font-size: 3rem;
         padding: 0 1rem;
+    }
+
+    .email-button {
+        width: 60%;
     }
 
     .left-h2 {
