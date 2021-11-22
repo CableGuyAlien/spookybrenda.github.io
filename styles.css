@@ -6,6 +6,11 @@ body {
     background-color: whitesmoke;
 }
 
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -256,13 +261,13 @@ span {
 }
 
 .footer > div > h4 {
-    margin: 1rem 3rem;
-
+    margin: 0.5rem 3rem;
+    border: 2px solid whitesmoke;
+    padding: 0.5rem 1rem;
 }
 
-.social-link {
-    text-decoration: none;
-    color: whitesmoke
+.footer > div > p {
+    margin: 0.3rem;
 }
 
 .footer-logo-div > img {
@@ -270,7 +275,22 @@ span {
     margin-top: 1rem;
 }
 
+.socials-p {
+    display: flex;
+    align-items: center;
+}
 
+.footer-twitter-logo {
+    max-height: 1.2rem;
+    margin-left: 0.4rem;
+    padding-top: 0.3rem;
+}
+
+.footer-discord-logo {
+    max-height: 1.7rem;
+    margin-left: 0.4rem;
+    padding-top: 0.3rem;
+}
 
 
 @media only screen and (max-width: 768px) {
