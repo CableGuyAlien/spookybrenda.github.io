@@ -243,11 +243,10 @@ span {
 }
 
 .footer {
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.9);
     color: whitesmoke;
     margin: 0;
-    padding: 0;
-    min-height: 7rem;
+    min-height: 8rem;
     display: flex;
 }
 
@@ -260,9 +259,10 @@ span {
     justify-content: center;
 }
 
-.footer > div > h4 {
+.footer-h4 {
+    border-bottom: 2px solid whitesmoke;
     margin: 0.5rem 3rem;
-    border: 2px solid whitesmoke;
+    margin-top: 1rem;
     padding: 0.5rem 1rem;
 }
 
@@ -272,7 +272,7 @@ span {
 
 .footer-logo-div > img {
     max-height: 8rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 
 .socials-p {
@@ -292,6 +292,15 @@ span {
     padding-top: 0.3rem;
 }
 
+.quotes-footer-div > p {
+    text-align: center;
+    width: 70%;
+}
+
+.footer-email {
+    font-weight: 700;
+    color: whitesmoke;
+}
 
 @media only screen and (max-width: 768px) {
     .logo {
@@ -355,5 +364,16 @@ span {
 
     #bottom > div {
         width: 70%;
+    }
+
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 30rem;
+    }
+
+    .footer > div {
+        width: 90%;
     }
 }
