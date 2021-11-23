@@ -193,6 +193,7 @@ span {
     text-align: center;
     margin: 5rem auto 2rem auto;
     border-bottom: 5px solid black;
+    padding: 0 1rem;
 }
 
 .profiles {
@@ -389,6 +390,10 @@ span {
     main > h1 {
         font-size: 3rem;
         padding: 0 1rem;
+    }
+
+    .email-button {
+        width: 65%;
     }
 
     .left-h2 {
