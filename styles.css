@@ -87,11 +87,6 @@ span {
     color: rgb(110, 110, 110);
 }
 
-.email {
-    color: black;
-    font-weight: 700;
-}
-
 .email-button {
     display: flex;
     margin: 0 auto;
@@ -103,6 +98,7 @@ span {
     border-radius: 0.5rem;
     transition: all ease-in-out 0.2s;
     padding: 0;
+    font-size: 0.85rem;
 }
 
 .email-button > a {
