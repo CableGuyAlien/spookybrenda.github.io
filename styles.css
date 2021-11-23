@@ -96,7 +96,7 @@ span {
     display: flex;
     margin: 0 auto;
     margin-bottom: 3rem;
-    width: 25%;
+    width: 40%;
     justify-content: center;
     background-color: whitesmoke;
     border: 3px solid rgba(0, 0, 0, 0.75);
@@ -277,6 +277,9 @@ span {
 .packages > p {
     width: 80%;
     text-align: center;
+}
+
+.packages > p:last-of-type {
     margin-bottom: 3rem;
 }
 
@@ -286,6 +289,10 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.packages > div > ul > li {
+    text-align: center;
 }
 
 .diamond {
@@ -382,10 +389,6 @@ span {
     main > h1 {
         font-size: 3rem;
         padding: 0 1rem;
-    }
-
-    .email-button {
-        width: 60%;
     }
 
     .left-h2 {
