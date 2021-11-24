@@ -87,6 +87,11 @@ span {
     color: rgb(110, 110, 110);
 }
 
+.email {
+    color: black;
+    font-weight: 700;
+}
+
 .email-button {
     display: flex;
     margin: 0 auto;
